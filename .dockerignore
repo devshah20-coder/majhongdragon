@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+ios
+android
+.env
+.env.local
+npm-debug.log
+dragonmind-start.out.log
+dragonmind-start.err.log
