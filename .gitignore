@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+ios/
+android/
+.env
+.env.local
+.env.*.local
+*.log
+tsconfig.tsbuildinfo
+DragonMind-Mahjong-*.zip
+.zip-stage-*/
+public/sw.js
+public/workbox-*.js

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { MahjongTile } from "@/components/MahjongTile";
 import { analyzeHand } from "@/lib/mahjong/analyzer";
 
 const tiles = ["1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "1s", "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "1z", "2z", "3z", "4z", "5z", "6z", "7z"];
@@ -31,8 +32,8 @@ export function SoloTrainer() {
 
       <div className="mt-4 flex flex-wrap gap-2">
         {hand.map((tile, index) => (
-          <button className="tile-face h-14 w-10 rounded-lg text-sm font-black" key={`${tile}-${index}`} onClick={() => discard(index)} type="button">
-            {tile}
+          <button className="rounded-lg transition active:scale-95" key={`${tile}-${index}`} onClick={() => discard(index)} title={`Discard ${tile}`} type="button">
+            <MahjongTile code={tile} small />
           </button>
         ))}
       </div>
@@ -43,8 +44,8 @@ export function SoloTrainer() {
 
       <div className="mt-4 grid grid-cols-7 gap-2">
         {tiles.map((tile) => (
-          <button className="rounded-lg border border-jade/20 bg-navy/70 px-2 py-2 text-sm font-bold text-pearl" key={tile} onClick={() => draw(tile)} type="button">
-            {tile}
+          <button className="grid place-items-center rounded-lg border border-jade/20 bg-navy/70 p-1 transition hover:border-gold/60 disabled:opacity-40" disabled={hand.length >= 14} key={tile} onClick={() => draw(tile)} type="button">
+            <MahjongTile code={tile} small />
           </button>
         ))}
       </div>

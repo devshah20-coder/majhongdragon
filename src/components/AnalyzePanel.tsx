@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { MahjongTile } from "@/components/MahjongTile";
 import { analyzeHand } from "@/lib/mahjong/analyzer";
 import { VariantId, variants } from "@/lib/mahjong/variants";
 
@@ -28,6 +29,20 @@ export function AnalyzePanel() {
             ))}
           </select>
         </label>
+      </div>
+
+      <div className="mt-5 rounded-lg border border-jade/15 bg-navy/55 p-4">
+        <div className="flex items-center justify-between gap-3">
+          <p className="font-black text-pearl">Your tiles</p>
+          <p className="text-xs font-bold text-jade/75">{analysis.tiles.length} tiles read</p>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {analysis.tiles.length > 0 ? (
+            analysis.tiles.map((tile, index) => <MahjongTile code={tile} key={`${tile}-${index}`} small />)
+          ) : (
+            <p className="text-sm text-jade/75">Type a hand like 123m456p789s11z22z.</p>
+          )}
+        </div>
       </div>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-3">
