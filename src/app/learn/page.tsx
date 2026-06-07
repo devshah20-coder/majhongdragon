@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { MahjongTile } from "@/components/MahjongTile";
-import { PageShell } from "@/components/PageShell";
-import { tileGroups } from "@/lib/mahjong/tile-display";
+import { MahjongTile } from "../../components/MahjongTile";
+import { PageShell } from "../../components/PageShell";
+import { tileGroups } from "../../lib/mahjong/tile-display";
 
 const lessons = [
   {

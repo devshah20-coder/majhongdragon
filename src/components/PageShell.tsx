@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Route } from "next";
-import { BrandMark } from "@/components/BrandMark";
+import { BrandMark } from "./BrandMark";
 
 const nav: Array<[string, Route]> = [
   ["Learn", "/learn"],

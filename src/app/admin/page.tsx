@@ -1,4 +1,4 @@
-import { PageShell } from "@/components/PageShell";
+import { PageShell } from "../../components/PageShell";
 
 const cards = ["User management", "Subscriptions", "Bans", "Analytics", "Lessons and blog", "American yearly cards", "Variant rules", "Announcements", "Contact CMS", "About CMS"];
 

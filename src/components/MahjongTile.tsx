@@ -1,4 +1,4 @@
-import { displayTile } from "@/lib/mahjong/tile-display";
+import { displayTile } from "../lib/mahjong/tile-display";
 
 const toneClass = {
   green: "text-emerald",

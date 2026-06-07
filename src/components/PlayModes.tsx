@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { AnalyzePanel } from "@/components/AnalyzePanel";
-import { SoloTrainer } from "@/components/SoloTrainer";
+import { AnalyzePanel } from "./AnalyzePanel";
+import { SoloTrainer } from "./SoloTrainer";
 
 const modes = [
   {

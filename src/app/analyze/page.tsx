@@ -1,5 +1,5 @@
-import { AnalyzePanel } from "@/components/AnalyzePanel";
-import { PageShell } from "@/components/PageShell";
+import { AnalyzePanel } from "../../components/AnalyzePanel";
+import { PageShell } from "../../components/PageShell";
 
 export default function AnalyzePage() {
   return (

@@ -1,5 +1,5 @@
-import { PageShell } from "@/components/PageShell";
-import { PlayModes } from "@/components/PlayModes";
+import { PageShell } from "../../components/PageShell";
+import { PlayModes } from "../../components/PlayModes";
 
 export default function PlayPage() {
   return (

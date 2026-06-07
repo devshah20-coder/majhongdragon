@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { analyzeHand } from "@/lib/mahjong/analyzer";
-import { VariantId, variants } from "@/lib/mahjong/variants";
+import { analyzeHand } from "../../../lib/mahjong/analyzer";
+import { VariantId, variants } from "../../../lib/mahjong/variants";
 
 export async function POST(request: NextRequest) {
   const body = await request.json();

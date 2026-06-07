@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { MahjongTile } from "@/components/MahjongTile";
-import { analyzeHand } from "@/lib/mahjong/analyzer";
-import { VariantId, variants } from "@/lib/mahjong/variants";
+import { MahjongTile } from "./MahjongTile";
+import { analyzeHand } from "../lib/mahjong/analyzer";
+import { VariantId, variants } from "../lib/mahjong/variants";
 
 const sampleHand = "123m456p789s11z22z";
 

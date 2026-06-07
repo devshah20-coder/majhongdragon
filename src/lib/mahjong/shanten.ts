@@ -1,4 +1,4 @@
-import { allTileTypes, parseHand, removeOne, tileCounts, Tile } from "@/lib/mahjong/tiles";
+import { allTileTypes, parseHand, removeOne, tileCounts, Tile } from "./tiles";
 
 type MeldResult = { melds: number; taatsu: number };
 

@@ -1,8 +1,8 @@
-import { estimateDanger } from "@/lib/mahjong/defense";
-import { estimateScore } from "@/lib/mahjong/scoring";
-import { calculateStandardShanten, calculateUkeire, rankDiscards } from "@/lib/mahjong/shanten";
-import { parseHand, sortTiles } from "@/lib/mahjong/tiles";
-import { getVariant, VariantId } from "@/lib/mahjong/variants";
+import { estimateDanger } from "./defense";
+import { estimateScore } from "./scoring";
+import { calculateStandardShanten, calculateUkeire, rankDiscards } from "./shanten";
+import { parseHand, sortTiles } from "./tiles";
+import { getVariant, VariantId } from "./variants";
 
 export type AnalysisRequest = {
   variant: VariantId;

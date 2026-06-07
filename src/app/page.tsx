@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AnalyzePanel } from "@/components/AnalyzePanel";
-import { MahjongTile } from "@/components/MahjongTile";
-import { PageShell } from "@/components/PageShell";
-import { SoloTrainer } from "@/components/SoloTrainer";
-import { variants } from "@/lib/mahjong/variants";
+import { AnalyzePanel } from "../components/AnalyzePanel";
+import { MahjongTile } from "../components/MahjongTile";
+import { PageShell } from "../components/PageShell";
+import { SoloTrainer } from "../components/SoloTrainer";
+import { variants } from "../lib/mahjong/variants";
 
 const features = [
   { label: "Learn the tiles", href: "/learn", copy: "See suits, winds, dragons and basic hands." },

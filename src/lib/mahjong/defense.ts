@@ -1,4 +1,4 @@
-import { Tile } from "@/lib/mahjong/tiles";
+import { Tile } from "./tiles";
 
 export type DangerReport = {
   tile: Tile;

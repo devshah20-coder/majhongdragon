@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getRazorpayConfig } from "@/lib/payments/razorpay";
+import { getRazorpayConfig } from "../../../../../lib/payments/razorpay";
 
 export async function POST() {
   const { keyId, keySecret } = getRazorpayConfig();

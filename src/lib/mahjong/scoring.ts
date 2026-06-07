@@ -1,4 +1,4 @@
-import { VariantId } from "@/lib/mahjong/variants";
+import { VariantId } from "./variants";
 
 export type ScoreEstimate = {
   label: string;

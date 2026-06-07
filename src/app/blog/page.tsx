@@ -1,4 +1,4 @@
-import { PageShell } from "@/components/PageShell";
+import { PageShell } from "../../components/PageShell";
 
 const posts = ["How shanten guides every discard", "Riichi push/fold basics", "American Mahjong card updates explained"];
 

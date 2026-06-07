@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { AppInstallPrompt } from "@/components/AppInstallPrompt";
-import { MobileNav } from "@/components/MobileNav";
+import { AppInstallPrompt } from "../components/AppInstallPrompt";
+import { MobileNav } from "../components/MobileNav";
 
 export const metadata: Metadata = {
   title: "DragonMind Mahjong",
