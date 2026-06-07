@@ -1,0 +1,19 @@
+{
+  "name": "DragonMind Mahjong",
+  "short_name": "DragonMind",
+  "description": "Learn, analyze, and master every Mahjong variant.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#071421",
+  "theme_color": "#071421",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
